@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>The best movies on netflix instant, Find the best rated movies according to Rotten Tomatos</title>
+    <meta name="description" content="Search for the best of netflix instant with ratings from Rotten Tomatos" />
+    <meta name="keywords" content="netflix, instant, ratings with rotten tomatos" />
+
+
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24559646-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+    <form runat="server">
+    <div >
+        <div >
+            <div class='mainTitle'>
+             <h3 class="headerText">
+                    Finding great movies on Netflix Instant isn't always easy.  We're here to help by showing the top rated movies available now.
+                </h3>
+                <h1>
+                    WhatsOnInstant.com
+                </h1>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="loading">
+            <div class="loadingSpinner"><img src="/Images/ajax-loader.gif" alt="loading" /></div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <a href="http://www.netflix.com" target="_blank">delivered by Netflix</a>
+    </div>
+    </form>
+
+    <script type="text/javascript">
+        function ShowLoading() {
+            $('.loading').show();
+        }
+
+        function HideLoading() {
+            $('.loading').hide();
+        }
+
+        jQuery.ajaxSetup({
+            beforeSend: function () {
+                ShowLoading();
+            },
+            complete: function () {
+                HideLoading();
+            },
+            success: function () { }
+        });
+
+    </script>
+</body>
+</html>

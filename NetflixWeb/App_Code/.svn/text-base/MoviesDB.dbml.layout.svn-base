@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MoviesDB">
+  <DataContextMoniker Name="/MoviesDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="69e8faf0-65e2-4706-9c86-5975c9cccdfd" absoluteBounds="3.75, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/MoviesDBDataContext/DevLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1098bff7-6f2b-490d-b456-68d43204a18a" absoluteBounds="3.765, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0c20c45-3439-45c7-aa1c-d380dd7e03a8" absoluteBounds="3.5, 1.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MoviesDBDataContext/RtMovy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ab41a36-a896-458f-ac01-573aaf4a1305" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a7551d1-bb84-4489-9cfd-867af3c6a61e" absoluteBounds="0.75, 1, 1.75, 3.3093082682291666">
+      <DataClassMoniker Name="/MoviesDBDataContext/NetflixMovy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cff8b9b1-d5a9-472c-945a-92a64c033efd" absoluteBounds="0.765, 1.46, 1.7200000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.70274983723958); (3.5 : 2.70274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MoviesDBDataContext/NetflixMovy/NetflixMovy_RtMovy" />
+      <nodes>
+        <classShapeMoniker Id="7a7551d1-bb84-4489-9cfd-867af3c6a61e" />
+        <classShapeMoniker Id="d0c20c45-3439-45c7-aa1c-d380dd7e03a8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

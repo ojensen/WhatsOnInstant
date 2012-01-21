@@ -1,0 +1,27 @@
+<div id='moviesDiv'>
+    <div class='movieTitleCard'>
+        <div class='movieName'>${Name}</div>
+        <span class='movieReleaseYear'>${ReleaseYear}</span>
+        <span class='movieRating'>${Rating}</span>
+        <span class='movieRuntime'>${ $item.runtime() }</span>
+    </div>
+	<div style="padding: 2px">
+		<table>
+			<tr>
+				<td><img src='${BoxArt.LargeUrl}'></td>
+				<td valign="top">
+					<div class="movieSynopsis">${Synopsis}</div> 
+					<br/>
+					<table>
+						<tr>
+							<td><div id="movieratingdiv${Id}" class="rating"  avgrating="${AverageRating}"></div></td>
+							<td><span class="movieAverageRating">${AverageRating}</span></td>
+							<td><span >Member Average</span></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<br/>

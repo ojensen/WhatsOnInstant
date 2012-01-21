@@ -1,0 +1,199 @@
+﻿html
+{
+    color : #fff;
+    padding : 0px 0px 0px 0px;
+    font-family : Segoe UI;
+    font-size : 12px;
+    margin :  0px 0px 0px 0px;
+    /*background-color : rgb(185, 9, 11);
+    background-color:#282828;*/
+    
+}
+
+body
+{
+    background-color : #fff;
+    
+}
+
+
+#movieListingContainer
+{
+    margin:auto;
+    width:900px
+}
+.netFlixHeader
+{
+    font-size : 40px;
+    font-weight : bolder;
+}
+
+.moviesDiv
+{
+    background-color:#404040;
+    padding:5px;
+    height:235px;
+    margin:auto;
+    width:890px;
+}
+
+.movieTitleCard
+{
+    height: 65px;
+    color:white;
+    vertical-align:middle;
+    background:maroon;
+    vertical-align:middle;
+}
+
+.movieContentCard
+{
+    height:150;
+    padding:5px;
+}
+
+
+.movieSynopsis
+{
+    font-size : 14px;
+    text-align : justify;
+}
+
+.movieName
+{
+    font-weight:bolder;font-size:30px;padding-left:5px;vertical-align:middle;    
+}
+
+.movieReleaseYear
+{
+    font-size:14px;padding-left:5px;vertical-align:middle;    
+}
+
+.movieRating
+{
+    font-size:14px;
+    vertical-align:middle;
+    border:1px solid white;
+    width:50px;
+    padding : 1px;
+    margin-left : 30px;
+}
+
+.movieRuntime
+{
+    font-size:14px;
+    vertical-align:middle;
+    padding : 1px;
+    margin-left : 30px;
+}
+
+.movieAverageRating
+{
+    padding-top : 0px;
+    padding-left:15px;
+    padding-right:10px;
+    font-size : 16px;
+    font-weight: bolder;
+    vertical-align : middle;
+    color : White;
+    
+}
+
+.rating
+{
+    width:100px;
+    float:left;
+    vertical-align : middle;
+}
+
+.paging
+{
+    font-size:large;
+    
+    
+}
+.pagingContainer
+{
+    margin-left:200px;
+    padding-bottom: 10px;
+}
+
+
+
+.meter.popcorn {
+    background-position: 0 -150px;
+    margin-bottom: 1px;
+}
+.meter.certified {
+    background-position: 0 -100px;
+}
+.meter.rotten {
+    background-position: 0 -50px;
+}
+
+
+.meter {
+    background: url("/images/rt_lg.png?v=20110721") no-repeat scroll left top transparent;
+    clear: left;
+    color: #506A16;
+    display: block;
+    float: right;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 4px;
+    max-height: 50px;
+    min-height: 50px;
+    padding-left: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.netflixRating
+{
+    padding:10px;
+}
+
+meter.numeric {
+    font-size: 48px;
+    padding:10px;
+}
+
+
+.Homepage-ButtonContainer
+{
+        padding-top: 0px;
+        padding-left: 20px;
+        float:left;
+        color:Black;
+}
+
+.Homepage-TagLine
+{
+    font-size:large;
+    font-weight:bold;
+
+    text-align:center;
+}
+
+
+.MovieDetails-Container
+{
+    margin:40px;
+    padding:20px;
+    font-size:larger;
+    color:Black;
+    background: none repeat scroll 0 0 #F6F7F9;
+    border: 1px solid #E1E1E1;
+}
+.MovieDetails-Title
+{
+    font-size: 40px;
+    color:#657E9C;
+}
+
+.btnContainer
+{
+    font-size:larger;
+    float:right;
+}
